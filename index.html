@@ -1,12 +1,209 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {
-       background: grey; 
-      }
-    </style>
-  </head>
-<body>
-  <h1>First Git Hub page.</h1>
+<head>
+	<title>Jasmeet Singh-Web Developer|Software Developer|Pune</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta property="og:title" content="Software developer,Web Developer,Hybrid App Developer|Freelance|Pune" />
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/animate.css" rel="stylesheet">
+</head>
+<body ng-app="app" ng-controller="profileCtrl">
+
+<div class="main-section">
+            <div class="nav">
+                <h2>Jasmeet Singh</h2>
+            </div>
+            <div class="section-content animated bounceInDown">
+                <div class="float-left job-title">
+                        <h1>UI DEVELOPER</h1>
+                        <div class="small"><em>Responsive Web Apps...</em></div>
+                </div>
+                <div class="float-right">
+                        <img src="images/responsive-web-img.png" class="responsive-image" alt="responsive web image">
+                </div>                
+            </div>
+</div>
+<div class="section white-bg">
+            <div class="section-content  fadeInUp">
+                <div class="title">
+                    <h1>About</h1>
+                    <img src="images/about.png" width="40px" alt="profile icon">
+                </div>
+
+                <div class="content">
+                    <div>
+						<h2>Jasmeet Singh<h2>
+						
+						<h4>I develop Responsive Web applications.</h4>
+						
+						<ul>
+						<li>
+						Over 6+ years of sound experience in software development with a variety of projects and environments
+						</li>
+						<li>
+						Good understanding of Object Oriented Programming concepts and optimized code implementation. 
+						</li>
+						<li>
+						Involved in the design, development and execution of a project with given functionalities, Ability to understand the functional requirements.
+						</li>
+						<li>
+						Hands on work experience in Angular, Typescript, ES6, Javascript, Jquery, AngularJS, HTML5, SASS, CSS3, Web APIs etc.
+						</li>
+						<li>
+						Good analytical and problem solving skills.
+						</li>
+						<li>
+						Effective in working independently and collaboratively in teams
+						</li>
+						</ul>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- ./about -->
+<div class="section blue-bg">
+            <div class="section-content  fadeInUp">
+                <div class="title">
+                    <h1>Experience</h1>
+                    <img src="images/exp-icon.png" width="40px" alt="experience icon">
+                </div>
+
+                <div class="content">
+                    <div>
+                        <div class="box" ng-repeat="company in resume.companies">
+                            <h2>{{company.name}}</h2>
+                            <a target="_blank" href="{{company.website}}"></a>
+                            <div class="small">{{company.startYear}} - {{company.endYear}}</div>
+                            <p>{{company.role}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ./experience -->		
+		        <div class="section white-bg">
+            <div class="section-content  fadeInUp">
+                <div class="title">
+                    <h1>Skillset</h1>
+                    <img src="images/skill-icon.png" width="40px" alt="skill icon">
+                </div>
+
+                <div class="content">
+                    <div>
+                        <div class="dual-col" ng-repeat="skillset in resume.skillsets">
+                            <h2>{{skillset.name}}</h2>
+                            <div class="w3-progress-container">
+                                <div class="w3-progressbar" style="width:{{skillset.level}}"></div>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+        </div><!-- ./skillset -->
+		<div class="section blue-bg">
+            <div class="section-content  fadeInUp">
+                <div class="title">
+                    <h1>Education</h1>
+                    <img src="images/education-icon.png" width="40px" alt="motarboard icon">
+                </div>
+
+                <div class="content">
+                    <div ng-repeat="school in resume.education">
+                        <div class="small">{{school.passYear}}</div>
+                        <h2>{{school.school}}</h2>
+                        <p>{{school.stream}}</p>
+						</br></br>	
+                    </div>
+                </div>
+            </div>
+        </div><!-- ./education -->
+
+        <!-- <div class="section white-bg" style="border-bottom: 1px solid #eee;">
+            <div class="section-content  fadeInUp">
+                <div class="title">
+                    <h1>MY WORKS</h1>
+                    <img src="images/computer.png" width="40px" alt="computer icon">
+                </div>
+
+                <div class="content">
+                    <div>
+                        <div class="dual-col img-col" ng-repeat="work in resume.works.websites">
+                            <a target="_blank" href="{{work.website}}"><img src="images/{{work.image}}"></a>
+                            <a target="_blank" href="{{work.website}}"><h2>{{work.comapny}}</h2></a>
+                            <div class="tag" ng-repeat="tag in work.tags">{{tag.name}}</div>
+                            
+                        </div>
+						<div class="dual-col" ng-repeat="work in resume.works.nonwebsites">
+                            <a target="_blank" href="{{work.website}}"><h2>{{work.comapny}}</h2></a>
+							<p>{{work.decripton}}</p>
+                            <div class="tag" ng-repeat="tag in work.tags">{{tag.name}}</div>
+							<p></p>
+                        </div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>./my works -->
+		<div class="section white-bg">
+            <div class="section-content  fadeInUp">
+                <div class="title">
+                    <h1>LET'S TALK</h1>
+                    <div class="small">Pune,India</div>
+                    <img src="images/mail-icon.png" width="40px" alt="mail icon">
+                </div>
+
+                <div class="content">
+                    <div>
+                        <h2 mailto="jasmeet2125@gmail.com">jasmeet2125@gmail.com</h2><br/>
+                        <a target="_blank" href="https://www.linkedin.com/in/jasmeet-singh-8851b378/"><img src="images/linkedin-icon.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ./contact -->
+
+<script>
+var app=angular.module("app",[]);
+app.controller("profileCtrl",function($scope){
+	var profile={
+				about:{
+				
+				},
+				companies:[{name:"SunGard (Now part of FIS)",startYear:"Nov 2014",endYear:"Present",website:"",role:"Senior Engineer Product Development"},
+						  {name:"Infosys Limited",startYear:"Aug 2011",endYear:"Nov 2014",website:"",role:"Senior Systems Engineer"}
+				],
+				skillsets:[{name:"Angular",level:"70%"},
+						   {name:"Javascript",level:"80%"},
+						   {name:"Jquery",level:"80%"},
+						   {name:"AngularJS",level:"80%"},
+						   {name:"Typescript",level:"70%"},
+						   {name:"SASS",level:"70%"},
+						   {name:"HTML5",level:"80%"},
+						   {name:"CSS3",level:"70%"},
+						   {name:"NodeJS",level:"70%"},
+						   {name:"Jenkins",level:"80%"}
+				],
+				education:[
+							{school:"University College of Engineering, Punjabi University, Patiala",passYear:"2011",website:"",stream:"B.E. in Electronics and Communication Engineering"},
+				]
+	}
+	$scope.resume=profile;
+
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38590357-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
