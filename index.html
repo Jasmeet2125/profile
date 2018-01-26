@@ -9,6 +9,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   <script src="js/profileController.js"></script>
    <link href="css/style.css" rel="stylesheet">
    <link href="css/animate.css" rel="stylesheet">
 </head>
@@ -166,35 +167,6 @@
             </div>
         </div><!-- ./contact -->
 
-<script>
-var app=angular.module("app",[]);
-app.controller("profileCtrl",function($scope){
-	var profile={
-				about:{
-				
-				},
-				companies:[{name:"SunGard (Now part of FIS)",startYear:"Nov 2014",endYear:"Present",website:"",role:"Senior Engineer Product Development"},
-						  {name:"Infosys Limited",startYear:"Aug 2011",endYear:"Nov 2014",website:"",role:"Senior Systems Engineer"}
-				],
-				skillsets:[{name:"Angular",level:"70%"},
-						   {name:"Javascript",level:"80%"},
-						   {name:"Jquery",level:"80%"},
-						   {name:"AngularJS",level:"80%"},
-						   {name:"Typescript",level:"70%"},
-						   {name:"SASS",level:"70%"},
-						   {name:"HTML5",level:"80%"},
-						   {name:"CSS3",level:"70%"},
-						   {name:"NodeJS",level:"70%"},
-						   {name:"Jenkins",level:"80%"}
-				],
-				education:[
-							{school:"University College of Engineering, Punjabi University, Patiala",passYear:"2011",website:"",stream:"B.E. in Electronics and Communication Engineering"},
-				]
-	}
-	$scope.resume=profile;
-
-});
-</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
